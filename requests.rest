@@ -1,0 +1,58 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmZmMzNWQ4NjU5YTI0MzIxMDJmZWQ5NSIsIm5hbWUiOiJIYXJpcyIsImVtYWlsIjoiaHRhcmFoaWphMTExQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJGpxSWRzOUhMcGF3WGFDay5BZnFSd3VlVVo3a0t1L2dVSXlzalhad1hJVk5WYmhRaUZiNWdLIiwiX192IjowfSwiaWF0IjoxNjEwMzY1NzQ3fQ.4VMBG3skOcXkTslv9p5--oSiYUINTTz7v9oaaJvhpos
+
+###
+
+POST http://localhost:3000/login
+Content-Type : application/json
+
+        {
+        "name": "Haris",
+        "email": "htarahija12345@gmail.com",
+        "password": "hare11111"
+        }
+
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "user":
+        {
+        "name": "Haris",
+        "email": "htarahija12345@gmail.com",
+        "password": "hare11111",
+        "role": "admin"
+        }
+}
+
+
+###
+POST http://localhost:3000/createItem
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmZmM0NTRhODU0NWRkMWJlMGM3ZjBhMSIsIm5hbWUiOiJIYXJpcyIsImVtYWlsIjoiaHRhcmFoaWphMTIzNDVAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkR3VENS5tc3VsZHNKREdZZGxZc3dFZTFzdjd3N2YuVHRXM2s5czN6Qy9PS1ZaR2s3NmRvMTYiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE2MTA1NjU5NTl9.gDefQxTiybY8RpGo3kYymhJSmKpu42OIMdtQ-nXROoI
+Content-Type: application/json
+
+{
+    "item":
+    {
+        "name": "Durex",
+        "count": 1,
+        "price":100,
+        "description":1000
+    }
+}
+
+###
+
+POST http://localhost:3000/makeOrder
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjVmZmM0NTRhODU0NWRkMWJlMGM3ZjBhMSIsIm5hbWUiOiJIYXJpcyIsImVtYWlsIjoiaHRhcmFoaWphMTIzNDVAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkR3VENS5tc3VsZHNKREdZZGxZc3dFZTFzdjd3N2YuVHRXM2s5czN6Qy9PS1ZaR2s3NmRvMTYiLCJyb2xlIjoiYWRtaW4iLCJfX3YiOjB9LCJpYXQiOjE2MTA1NjczNTUsImV4cCI6MTYxMDU3MDk1NX0.l_5v3dSKWTfnoVJ_trhqvRZkar3Vh0VcefEdtVjcG-Q
+
+Content-Type: application/json
+
+{
+    "order":
+    {
+        "message":"ovo je poruka"
+    }
+}
